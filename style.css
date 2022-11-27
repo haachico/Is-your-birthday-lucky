@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  color: #0f172a;
+  width: 60%;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f43f5e;
+  padding: 4rem 0;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  font-family: "Kalam", cursive;
+  color: #fff1f2;
+}
+
+.birth-day-text {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fdf2f8;
+}
+
+#birth-date {
+  margin-bottom: 3rem;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.lucky-num-text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fdf2f8;
+}
+
+#lucky-no {
+  margin-bottom: 3rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.check-btn {
+  margin-bottom: 3rem;
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: #f43f5e;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
