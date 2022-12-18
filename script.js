@@ -17,10 +17,19 @@ function calcSumOfDate(dob) {
 // console.log(dob);
 checkButton.addEventListener("click", function () {
   const dateOfBirth = calcSumOfDate(birthDate.value);
-  console.log(birthDate.value);
-  if (dateOfBirth % Number(luckyNum.value) === 0) {
-    resultBox.value = `Your Birthdate is lucky 🥳`;
+  const numberInput = Number(luckyNum.value);
+
+  if (dateOfBirth !== 0) {
+    if (numberInput < 0 || numberInput === 0) {
+      resultBox.value = "Please enter a valid positive number!";
+    } else {
+      if (dateOfBirth % numberInput === 0) {
+        resultBox.value = `Your Birthdate is lucky 🥳`;
+      } else {
+        resultBox.value = `Your birthdate is not lucky 🙁`;
+      }
+    }
   } else {
-    resultBox.value = `Your birthdate is not lucky 🙁`;
+    resultBox.value = `Please enter a valid date!`;
   }
 });
